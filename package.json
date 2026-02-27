@@ -307,7 +307,7 @@
         "liveServer.settings.cors": {
           "type": "boolean",
           "default": false,
-          "description": "Enable or disable CORS support."
+          "description": "Enable or disable CORS support. Default is false. Note: If it is true, It will add 'Access-Control-Allow-Origin: *' header in response. Not a recommended way, please use liveServer.settings.headers for fine grained control over headers."
         }
       }
     }

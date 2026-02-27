@@ -108,21 +108,6 @@ export class Helper {
             }
         });
 
-
-        // Strip any user-provided CORS headers to prevent bypassing the disabled default
-        if (!corsEnabled) {
-            let hasStrippedAtLeastOneHeader = false;
-            for (const key of Object.keys(headers)) {
-                if (/^access-control-allow-/i.test(key)) {
-                    delete headers[key];
-                    hasStrippedAtLeastOneHeader = true;
-                }
-            }
-            if (hasStrippedAtLeastOneHeader) {
-                vscode.window.showWarningMessage('Stripped user-provided Access-Control-Allow-* headers because CORS is disabled.');
-            }
-        }
-
         const file = Config.getFile;
         return {
             port: port,
