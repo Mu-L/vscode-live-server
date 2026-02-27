@@ -163,7 +163,10 @@
             ".vscode/**",
             "**/*.scss",
             "**/*.sass",
-            "**/*.ts"
+            "**/*.ts",
+            "node_modules/**",
+            "venv/**",
+            ".venv/**"
           ],
           "description": "To ignore specific file changes"
         },
