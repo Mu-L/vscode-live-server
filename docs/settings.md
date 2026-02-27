@@ -201,10 +201,10 @@
     ```js
     {
         "liveServer.settings.headers": {
-            "Access-Control-Allow-Origin": "https://example.com"
-            "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE, OPTIONS"
-            "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With"
-            "Access-Control-Allow-Credentials": true
+            "Access-Control-Allow-Origin": "https://example.com",
+            "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers": "Content-Type,Authorization, X-Requested-With",
+            "Access-Control-Allow-Credentials": true,
             "Access-Control-Max-Age": 86400
         }
     }
